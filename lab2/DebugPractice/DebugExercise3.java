@@ -1,3 +1,7 @@
+package lab2.DebugPractice;
+
+import edu.princeton.cs.introcs.In;
+
 /**
  * Created by jug on 1/22/18.
  */

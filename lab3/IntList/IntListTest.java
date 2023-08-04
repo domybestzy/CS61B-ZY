@@ -1,6 +1,9 @@
-import static org.junit.Assert.*;
+package lab3.IntList;
 
+import lab2.Intlist.IntList;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class IntListTest {
 

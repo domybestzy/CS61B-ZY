@@ -1,5 +1,3 @@
-package lab2.Intlist;
-
 import java.util.Formatter;
 
 /**

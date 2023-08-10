@@ -1,5 +1,3 @@
-package lab2.DebugPractice;
-
 import edu.princeton.cs.introcs.In;
 
 /**

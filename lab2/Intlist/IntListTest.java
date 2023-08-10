@@ -1,8 +1,4 @@
-package lab2.Intlist;
-
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class IntListTest {
 
@@ -14,19 +10,19 @@ public class IntListTest {
 
     @Test
     public void testList() {
-        IntList one = new IntList(1, null);
-        IntList twoOne = new IntList(2, one);
-        IntList threeTwoOne = new IntList(3, twoOne);
+        Intlist.IntList one = new Intlist.IntList(1, null);
+        Intlist.IntList twoOne = new Intlist.IntList(2, one);
+        Intlist.IntList threeTwoOne = new Intlist.IntList(3, twoOne);
 
-        IntList x = IntList.of(3, 2, 1);
+        Intlist.IntList x = Intlist.IntList.of(3, 2, 1);
         assertEquals(threeTwoOne, x);
     }
 
     @Test
     public void testdSquareList() {
-        IntList L = IntList.of(1, 2, 3);
-        IntList.dSquareList(L);
-        assertEquals(IntList.of(1, 4, 9), L);
+        Intlist.IntList L = Intlist.IntList.of(1, 2, 3);
+        Intlist.IntList.dSquareList(L);
+        assertEquals(Intlist.IntList.of(1, 4, 9), L);
     }
 
     /**
@@ -44,28 +40,28 @@ public class IntListTest {
 
     @Test
     public void testSquareListRecursive() {
-        IntList L = IntList.of(1, 2, 3);
-        IntList res = IntList.squareListRecursive(L);
-        assertEquals(IntList.of(1, 2, 3), L);
-        assertEquals(IntList.of(1, 4, 9), res);
+        Intlist.IntList L = Intlist.IntList.of(1, 2, 3);
+        Intlist.IntList res = Intlist.IntList.squareListRecursive(L);
+        assertEquals(Intlist.IntList.of(1, 2, 3), L);
+        assertEquals(Intlist.IntList.of(1, 4, 9), res);
     }
 
     @Test
     public void testDcatenate() {
-        IntList A = IntList.of(1, 2, 3);
-        IntList B = IntList.of(4, 5, 6);
-        IntList exp = IntList.of(1, 2, 3, 4, 5, 6);
-        assertEquals(exp, IntList.dcatenate(A, B));
-        assertEquals(IntList.of(1, 2, 3, 4, 5, 6), A);
+        Intlist.IntList A = Intlist.IntList.of(1, 2, 3);
+        Intlist.IntList B = Intlist.IntList.of(4, 5, 6);
+        Intlist.IntList exp = Intlist.IntList.of(1, 2, 3, 4, 5, 6);
+        assertEquals(exp, Intlist.IntList.dcatenate(A, B));
+        assertEquals(Intlist.IntList.of(1, 2, 3, 4, 5, 6), A);
     }
 
     @Test
     public void testCatenate() {
-        IntList A = IntList.of(1, 2, 3);
-        IntList B = IntList.of(4, 5, 6);
-        IntList exp = IntList.of(1, 2, 3, 4, 5, 6);
-        assertEquals(exp, IntList.catenate(A, B));
-        assertEquals(IntList.of(1, 2, 3), A);
+        Intlist.IntList A = Intlist.IntList.of(1, 2, 3);
+        Intlist.IntList B = Intlist.IntList.of(4, 5, 6);
+        Intlist.IntList exp = Intlist.IntList.of(1, 2, 3, 4, 5, 6);
+        assertEquals(exp, Intlist.IntList.catenate(A, B));
+        assertEquals(Intlist.IntList.of(1, 2, 3), A);
     }
 
 }
